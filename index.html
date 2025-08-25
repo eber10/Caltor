@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caltor</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="logo/logo.png" type="image/png">
+</head>
+<body>
+    <h1 class="titulo">Bienvenido a Caltor</h1>
+    <div class="Caltor">
+        <input type="text" id="mostrar" disabled>
+        <div class="botones">
+            <button class="borrar" onclick="borrarMostrar()">C</button>
+            <button class="operador" onclick="ponerOperador('/')">/</button>
+            <button class="operator" onclick="ponerOperador('*')">*</button>
+            <button class="operator" onclick="ponerOperador('-')">-</button>
+
+            <button onclick="agregarNumero(7)">7</button>
+            <button onclick="agregarNumero(8)">8</button>
+            <button onclick="agregarNumero(9)">9</button>
+            <button class="operador" onclick="ponerOperador('+')">+</button>
+
+            <button onclick="agregarNumero(4)">4</button>
+            <button onclick="agregarNumero(5)">5</button>
+            <button onclick="agregarNumero(6)">6</button>
+            <button class="igual" onclick="calculate()">=</button>
+
+            <button onclick="agregarNumero(1)">1</button>
+            <button onclick="agregarNumero(2)">2</button>
+            <button onclick="agregarNumero(3)">3</button>
+            <button onclick="agregarNumero(0)">0</button>
+            <button onclick="agregarPunto()">.</button>
+        </div>
+    </div>
+    <script src="logica.js"></script>
+</body>
+</html>
